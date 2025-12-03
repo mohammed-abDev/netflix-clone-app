@@ -1,7 +1,6 @@
 import React from 'react'
 import './Rowlist.css'
 import Row from '../Row/Row'
-// import img from '../../../assets/images/netflix-curent-baner.jpg'
 import MyRequests from '../../../Utils/MyRequests'
 
 function Rowlist() {
