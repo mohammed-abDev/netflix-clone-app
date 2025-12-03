@@ -39,9 +39,9 @@ return (
     <div
       className="banner-img"
       style={{
-        backgroundImage: movie?.backdrop_path 
-        ? `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")` 
-        : `url(${defaultbaner})`,
+        backgroundImage: movie?.backdrop_path
+          ? `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`
+          : `url(${defaultbaner})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -72,6 +72,9 @@ return (
             <ChevronRightIcon />
           </button>
         </div>
+      </div>
+      <div className="uper-pinck-carve">
+        <div className="pinck-carve"></div>
       </div>
     </div>
   </>
