@@ -1,0 +1,73 @@
+.FAQ-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto ;
+    width: 80%;
+}
+.FAQ-Questions{
+    display: flex;
+    margin: 3px;
+    background-color:rgb(59, 55, 55); 
+    position: relative;
+    min-height: 70px;
+    padding: 20px;
+    align-items: center;
+}
+.FAQ-Questions>h2{
+    font-weight: normal;
+    flex-wrap: wrap; 
+}
+.toggle-icon{
+    position: absolute;
+    right: 0.8rem;
+    background: none;
+}
+.toggle-icon svg{
+    font-size: 3rem;
+    font-weight: 0;
+}
+.toggle-icon:hover{
+    background: none;
+}
+.FAQ-Answer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(59, 55, 55);
+}
+.FAQ-Answer-container div{
+    display: flex;
+    margin: 3px;
+    position: relative;
+    min-height: 70px;
+    padding: 20px;
+    align-items: center;
+}
+.FAQ-Answer-container div p{
+    font-size: 1.5rem;
+    white-space: pre-line; 
+    flex-wrap: wrap; 
+}
+.FAQ-Questions:hover,
+.FAQ-Answer-container:hover{
+    background-color:rgb(66, 64, 64) ;
+}
+
+
+@media (max-width: 768px) {
+    .FAQ-Questions > h2 {
+    font-size: 1rem;          
+    }
+    .toggle-icon {
+    position: absolute;
+    top: 0;                   
+    right: 0.5rem;            
+    }
+    .FAQ-Answer-container div p {
+    font-size: 1rem;         
+    line-height: 1.4;        
+    padding: 0.5rem;          
+    }
+}
