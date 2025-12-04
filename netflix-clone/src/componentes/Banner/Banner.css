@@ -62,22 +62,6 @@
 .signin-btn button:hover {
     background-color: #f40612;
 }
-.uper-pinck-carve{
-  align-items: center;
-    border: solid .25rem transparent;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    border-bottom: none;
-    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-}
-
-
-
-
-
-
 
 @media (max-width: 768px) {
   .netflix-moto h1 {

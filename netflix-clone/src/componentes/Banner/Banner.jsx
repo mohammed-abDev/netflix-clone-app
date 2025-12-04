@@ -4,6 +4,7 @@ import Myaxios from "../../Utils/Myaxios.js";
 import MyRequests from "../../Utils/MyRequests.js";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import defaultbaner from "../../assets/images/netflix-curent-baner.jpg";
+import { useRef } from 'react';
 
 
 function Banner() {
@@ -33,6 +34,11 @@ function Banner() {
 
 // console.log(movie);
 // console.log(`https://image.tmdb.org/t/p/original${movie.backdrop_path}`);
+
+const myRef = useRef(null)
+const focusHandler = ()=>{
+  myRef.current.focus()
+}
 
 return (
   <>
@@ -66,15 +72,13 @@ return (
             id=""
             placeholder="Email address"
             required
+            ref={myRef}
           />
-          <button>
+          <button onClick={focusHandler}>
             Geat Started
             <ChevronRightIcon />
           </button>
         </div>
-      </div>
-      <div className="uper-pinck-carve">
-        <div className="pinck-carve"></div>
       </div>
     </div>
   </>

@@ -1,5 +1,5 @@
 
- .outer-footer {
+.outer-footer {
   background-color: #111;
   padding: 60px 0;
   color: #757575;
@@ -70,4 +70,10 @@
 .social-link svg:hover {
   color: #aca2a2;          
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-content{
+      margin: 20px;
+    }
 }

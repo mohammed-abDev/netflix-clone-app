@@ -61,3 +61,54 @@ button:hover{
   color:white; 
 }
 
+/* Default (desktop) */
+.outer-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 12vh;
+  color: white;
+  display: flex;              
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;  
+}
+
+@media (max-width: 1024px) {
+  .outer-header {
+    padding: 0 40px;   
+    height: auto;    
+  }
+
+  .logo img {
+    height: 60px;      
+  }
+
+  .right-side {
+    gap: 15px;         
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .outer-header {
+    padding: 5px 5px;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .right-side {
+    gap: 10px;
+  }
+
+  button#sign-in {
+    width: 100%;              
+    padding: 10px;
+  }
+
+  .language-select {
+    width: 100%;              
+  }
+}

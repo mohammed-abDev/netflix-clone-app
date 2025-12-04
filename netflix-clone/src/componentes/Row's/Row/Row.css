@@ -141,3 +141,15 @@
 #close-icon:hover {
     background-color: rgba(253, 247, 247, 0.7);
 }
+
+@media (max-width: 768px) {
+    .pop-up {
+        width: 85%;
+    }
+    .pop-up h1{
+        font-size: 5vh;
+    }
+    .youtube-movie iframe {
+        width: 370px;
+}
+}

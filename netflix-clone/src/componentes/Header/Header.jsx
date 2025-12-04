@@ -32,7 +32,7 @@ function Header() {
             </MenuItem>
           </Select>
 
-          <button>Sign In</button>
+          <button id="sign-in">Sign In</button>
         </div>
       </nav>
     </>
