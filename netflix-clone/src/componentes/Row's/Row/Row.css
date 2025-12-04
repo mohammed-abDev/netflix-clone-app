@@ -1,0 +1,155 @@
+.scroll-poster {
+    width: 75%;
+    margin: 40px auto; 
+}
+
+.single-poster {
+    display: flex;
+    overflow-x: auto; 
+    gap: 35px;
+    padding: 10px 0;
+    scrollbar-width: none; 
+}
+
+.single-poster::-webkit-scrollbar {
+    display: none; 
+}
+
+.postre-us {
+    position: relative; 
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.postre-us img {
+    height: 15.98rem;
+    width: 12.5rem;
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.postre-us:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+.youtube-movie {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin:  auto; 
+}
+
+.youtube-movie iframe {
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
+.poster-order {
+    position: absolute; 
+    top: 8rem;
+    left: -0.625rem;
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgb(31, 30, 30);
+    -webkit-text-stroke: 2px white;
+    z-index: 1000;
+}
+
+/**/
+
+.pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(59, 55, 55);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 2000;
+}
+
+.pop-up img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+    border-radius: 5px;
+    margin: auto;
+}
+.pop-up h1{
+    font-family:italic;
+    font-weight: bold;
+    font-size: 10vh;
+}
+.pop-up-abt {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+.pop-up-abt div{
+    width: max-content;
+    height: 25px;
+    padding: 5px;
+    background-color: rgb(117, 116, 116);
+    border-radius: 3px;
+}
+
+.pop-up-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.pop-up-actions button {
+    display: flex;
+    align-items: center;
+    gap: 8px;         
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+#close-icon {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem; 
+    font-weight: bold;      
+    cursor: pointer;
+    position: absolute;    
+    top: 15px;
+    right: 15px;
+    width: 40px;           
+    height: 40px;
+    border-radius: 50%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}  
+
+#close-icon:hover {
+    background-color: rgba(253, 247, 247, 0.7);
+}
+
+@media (max-width: 768px) {
+    .pop-up {
+        width: 85%;
+    }
+    .pop-up h1{
+        font-size: 5vh;
+    }
+    .youtube-movie iframe {
+        width: 370px;
+}
+}
